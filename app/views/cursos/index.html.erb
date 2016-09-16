@@ -1,0 +1,68 @@
+<h1> INDEX </h1>
+
+<h1>Malla de los cursos</h1>
+ 
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+  
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+	<div class="white">
+	
+		<table class="table" style="width:100%">
+		  <caption>Cursos asignados</caption>
+		  <thead>
+			  <tr>
+			    <th>Código</th>
+			    <th>Nombre</th>
+			    <th>Eliminar</th>
+			    <th> &nbsp;</th>
+			  </tr>
+		  </thead>
+		  </tbody>
+		<% @cursos.each do |x| %>
+			  <tr>
+			    <td> <%= x.codigo %> </td>
+			    <td> <%= x.nombre %> </td>
+			    <td> <button class="btn btn-danger" > Remove </button> </td>
+			  </tr>
+		<% end %>
+		  </tbody>
+		</table>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
